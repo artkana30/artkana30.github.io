@@ -10,18 +10,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
   <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
   <head>
-    <title>Script HTML</title>
-    <!-- 
-  Made with love by Rayys!
-     Blog: https://PalingIT.com
-     Instagram: @rayyarrr
-     TikTok: @rayy4r
-     Email: rayyar0703@gmail.com
-  Thanks to all <3
-  
-  DM ke IG: @rayyarrr apabila masih bingung
-  untuk cara edit scriptnya!
--->
+    <title>From your bae | Evelyn</title>
   </head>
   <style>
     :root {
@@ -35,15 +24,11 @@
     }
   </style>
   <body>
-    <!-- Ganti Audio di sini -->
-    <audio id="linkmp3">https://feeldreams.github.io/papapa.mp3</audio>
     <div id="bodyblur">
-      <!-- Wallpaper -->
       <img src="https://feeldreams.github.io/wp3.jpeg" id="wallpaper" />
     </div>
     <div id='Content'>
-      <div id="suratin" onClick="memulai();audio.play();">
-        <!-- Tombol Surat -->
+      <div id="suratin" onClick="memulai();">
         <img src="https://rayyscoding.github.io/envelope.png" />
       </div>
       <p id="ket">Klik Suratnya!</p>
@@ -55,22 +40,18 @@
             <img src="https://feeldreams.github.io/peach1.gif" id="fotoakhir2" />
             <img src="https://feeldreams.github.io/weee.gif" id="fotoakhir3" />
           </div>
-          <!-- Konten Pertanyaan -->
           <p id="kalimat">Kamu Mau Gak Jadi Pacar Aku? 🤭❤️</p>
           <p id="kalimatb"></p>
           <p id="kalimatc"></p>
-          <!-- Konten Jawaban -->
           <p id="kalimat2">Yeaayy! 😆</p>
           <p id="kalimatb2">Sekarang, Kamu adalah Pacarku ❤️</p>
           <p id="kalimatc2">Eitss.. 🏃 Tapi kita akan PUTUS dalam waktu: <b id="ctimer" style="font-size:24px">7</b>
           </p>
-          <!-- Konten Jawaban 2 -->
           <p id="kalimat3">Tapi Boong😜</p>
           <p id="kalimatb3">Kamu beneran jadi pacar aku kok, wkwk🤣❤️</p>
           <p id="kalimatc3">📅 </p>
         </blockquote>
       </div>
-      <!-- Tombol Multifungsi -->
       <div id="Tombol">
         <a id="By" onClick="multifungsi()">
           <b id="tmbl">Mau</b>
@@ -79,7 +60,7 @@
         <a id="Bn2" onClick="ditolak2()"></a>
       </div>
     </div>
-    <!-- Jangan Edit Bagian Ini -->
+    
     <script>
       ftom = 0;
       jikapr = 1;
@@ -154,7 +135,7 @@
       }
       async function menuju() {
         await swals.fire('OK!', 'Kirim pesan ke WhatsApp aku, ya!', 'success');
-        window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;
+        window.location = "https://api.whatsapp.com/send?phone=081318977078&text=" + pesanwhatsapp;
         Tombol.style = "margin-top:15px;opacity:1;transform: scale(1);";
       }
       setTimeout(showDiv, 100);
@@ -165,7 +146,6 @@
         timerProgressBar: true,
         imageHeight: 100,
       });
-      audio = new Audio('' + linkmp3.innerHTML);
       const swals = Swal.mixin({
         allowOutsideClick: false,
         cancelButtonColor: '#FF0040',
@@ -195,6 +175,5 @@
         }
       }, 100);
     </script>
-    <!-- Sampai Sini -->
   </body>
 </html>
