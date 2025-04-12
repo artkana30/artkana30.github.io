@@ -1,0 +1,1 @@
+import{t as i,i as l}from"./index-Cwax4Sjk.js";var a=i('<div class="flex items-center justify-center min-h-screen"><div class=text-center><h2 class=h2>');function c(r){return(()=>{var e=a(),t=e.firstChild,s=t.firstChild;return l(s,()=>r.message),e})()}export{c as D};
